@@ -1,0 +1,25 @@
+html {
+    background-color: darkslategrey ;
+}
+.container {
+    margin: auto;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+.heading {
+    color: floralwhite;
+}
+.bodytext {
+    color: ivory;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+  .nav-link-item {
+    padding-right: 2rem;
+  }
+  .nav-link-text {
+    color: greenyellow;
+  }
