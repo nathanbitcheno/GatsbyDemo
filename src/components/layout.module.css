@@ -1,25 +1,98 @@
 html {
-    background-color: darkslategrey ;
+    background-color: #242121;
 }
-.container {
-    margin: auto;
-    max-width: 800px;
+html, body, body div, form, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
+form {
+    text-align: left;
+    width: 100%;
+}
+input, textarea {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #EDF5E1;
+    border: 0px;
+}
+button {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(240, 63, 71);
+    color: #EDF5E1;
+    border: 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.full-page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    padding: 20px 20px;
+    margin: auto;
+    max-width: 600px;
+    padding-top: 30px;
+    text-align: center;
+}
 .heading {
-    color: floralwhite;
+    color: #EDF5E1;
+    font-size: 4rem;
+    text-align: left;
 }
 .bodytext {
-    color: ivory;
+    color: #EDF5E1;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5rem;
+}
+.site-title {
+    font-size: 2rem;
+    color: rgb(240, 63, 71);
+    font-weight: 700;
+}
+.nav-bar {
+    padding: 20px 20px;
+    background-color: #242121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .nav-links {
     display: flex;
     list-style: none;
     padding-left: 0;
-  }
-  .nav-link-item {
+}
+.nav-link-item {
     padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: greenyellow;
-  }
+}
+.nav-link-text {
+    color: #EDF5E1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+.error {
+    color: rgb(240, 63, 71);
+}

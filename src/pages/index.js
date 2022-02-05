@@ -1,11 +1,15 @@
 import * as React from "react"
 import Layout from '../components/layout'
-import { bodytext } from '../components/layout.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p className={bodytext}>This is a demo Gatsby/React page.</p>
+    <Layout pageTitle="Home">
+      <StaticImage
+        src="../images/TreerootRed.png"
+        alt="Tree of life"
+        height="600"
+      />
     </Layout>
   )
 }
