@@ -6,7 +6,9 @@ import { bodytext, heading } from '../components/layout.module.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import {Trans} from 'gatsby-plugin-react-i18next'
 
-export default () => (
+//export default () => (
+  const ContactPage = () => {
+    return (
     <Layout pageTitle="Contact">
         <Formik
         initialValues={{
@@ -53,7 +55,10 @@ export default () => (
 
         </Formik>
     </Layout>
-  )
+    )
+  }
+  
+         export default ContactPage
 
   export const query = graphql`
   query($language: String!) {

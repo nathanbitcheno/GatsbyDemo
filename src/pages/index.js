@@ -1,48 +1,21 @@
 import * as React from "react"
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import CatFact from '../components/catfact'
 import {Trans} from 'gatsby-plugin-react-i18next'
 import { 
-  bodytext,
-  error,
-  heading
-  } from '../components/layout.module.css'
+    heading
+    } from '../components/layout.module.css'
 
-//const IndexPage = () => {
-class IndexPage extends React.Component {
-  state = {
-    loading: true,
-    error: false,
-    fetchedData: []
-  }
+const IndexPage = () => {
 
-  componentDidMount() {
-    fetch('https://catfact.ninja/fact').then(response => {
-      return response.json()
-    }).then(json => {
-      this.setState({
-        fetchedData: json.fact,
-        loading: false
-      })
-    })
-  }
-
-  render (){
-    
-    const {loading, fetchedData} = this.state
     return(
-    <Layout pageTitle="Cat Fact">
-      <h1 className={heading}><Trans>Cat Fact</Trans></h1>
-      {loading ? (
-      
-        <p class={error}>LOADING...</p>
-      ) : (
-        <p class={bodytext}>{fetchedData}</p>
-      )}
-      
-    </Layout>
+        <Layout pageTitle="Cat Fact">
+            <h1 className={heading}><Trans>Cat Fact</Trans></h1>
+            <CatFact></CatFact>
+        </Layout>
     )
 
-  }
 }
 export default IndexPage
 

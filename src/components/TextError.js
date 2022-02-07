@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { error } from '../components/layout.module.css'
 import {Trans} from 'gatsby-plugin-react-i18next'
 

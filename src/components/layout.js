@@ -1,14 +1,9 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
 import Nav from './nav'
-import {Trans} from 'gatsby-plugin-react-i18next'
 import { 
     container,
-    heading,
-    navLinks,
-    navLinkItem,
-    navLinkText,
     fullPage,
     navBar,
     siteTitle,
