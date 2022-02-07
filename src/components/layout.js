@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
+import Nav from './nav'
+import {Trans} from 'gatsby-plugin-react-i18next'
 import { 
     container,
     heading,
@@ -28,18 +30,12 @@ const Layout = ({ pageTitle, children }) => {
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
                 <nav className={navBar}>
 
-                        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-
-                    <div><ul className={navLinks}>
-                            <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
-                            <li className={navLinkItem}><Link to="/about" className={navLinkText}>About</Link></li>
-                            <li className={navLinkItem}><Link to="/contact" className={navLinkText}>Contact</Link></li>
-                            </ul>
-                    </div>
+                    <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+                    <Nav></Nav>
+                    
                 </nav>
             <div className={container}>
                 <main>
-                    <h1 className={heading}>{pageTitle}</h1>
                     {children}
                 </main>
             </div>
@@ -50,3 +46,4 @@ const Layout = ({ pageTitle, children }) => {
 }
 
 export default Layout
+

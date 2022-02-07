@@ -1,7 +1,14 @@
 {
-    "About": "Gatsby est le cadre rapide et flexible qui rend à nouveau amusant la création de sites Web avec n'importe quel CMS, API ou base de données. Créez et déployez des sites Web sans tête qui génèrent plus de trafic, convertissent mieux et génèrent plus de revenus !",
+    "AboutText": "Gatsby est le cadre rapide et flexible qui rend à nouveau amusant la création de sites Web avec n'importe quel CMS, API ou base de données. Créez et déployez des sites Web sans tête qui génèrent plus de trafic, convertissent mieux et génèrent plus de revenus !",
     "Name": "Nom",
     "Email": "Email",
     "Message": "Message",
-    "Home": "Homee"
+    "Send": "Envoyer",
+    "Cat Fact": "Fait de Chat",
+    "Home": "Home",
+    "About": "Sur",
+    "Contact": "Nous Contacter",
+    "Name Required": "Nom (obligatoire)",
+    "Valid Email Required": "Courriel Valide Requis",
+    "Message Required": "Message requis"
 }

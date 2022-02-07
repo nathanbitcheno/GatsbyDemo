@@ -1,8 +1,10 @@
 import * as React from "react"
 import Layout from '../components/layout'
+import {Trans} from 'gatsby-plugin-react-i18next'
 import { 
   bodytext,
-  error
+  error,
+  heading
   } from '../components/layout.module.css'
 
 //const IndexPage = () => {
@@ -27,9 +29,9 @@ class IndexPage extends React.Component {
   render (){
     
     const {loading, fetchedData} = this.state
-
     return(
     <Layout pageTitle="Cat Fact">
+      <h1 className={heading}><Trans>Cat Fact</Trans></h1>
       {loading ? (
       
         <p class={error}>LOADING...</p>
@@ -43,3 +45,17 @@ class IndexPage extends React.Component {
   }
 }
 export default IndexPage
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
