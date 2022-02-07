@@ -2,11 +2,10 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
 </p>
 <h1 align="center">
-  Gatsby
+  Gatsby Demo
 </h1>
 
-## 🚀 Quick start
 
-    ```shell
+    ```
     npm run develop
     ```
