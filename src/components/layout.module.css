@@ -6,10 +6,13 @@ html, body, body div, form, input, button, textarea {
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
+    font-size: 1.1rem;
     vertical-align: baseline;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+h1 {
+    line-height: 20px;
 }
 form {
     text-align: left;
@@ -44,13 +47,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    position: relative;
+    min-height: 100VH;
 }
 .container {
     padding: 20px 20px;
-    margin: auto;
     max-width: 600px;
-    padding-top: 30px;
+    margin: auto;
     text-align: center;
+    min-height: 70vh;
+    position: relative;
+}
+main {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.main-footer {
+    position: absolute;
+    bottom: 0px;
+}
+.language {
+    list-style-type: none;
+}
+.language li {
+    display: inline;
+}
+.language li a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+    text-transform: uppercase;
 }
 .heading {
     color: #EDF5E1;
@@ -62,6 +90,9 @@ body {
     font-weight: 500;
     text-align: left;
     line-height: 1.5rem;
+}
+h1, h2 {
+    line-height: 3rem !important;
 }
 .site-title {
     font-size: 2rem;

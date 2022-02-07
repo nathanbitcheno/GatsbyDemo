@@ -1,8 +1,10 @@
 import React from 'react'
+import {graphql} from 'gatsby';
 import Layout from '../components/layout'
 import TextError from '../components/TextError'
 import { bodytext } from '../components/layout.module.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import {Trans} from 'gatsby-plugin-react-i18next'
 
 export default () => (
     <Layout pageTitle="Contact">
@@ -33,15 +35,15 @@ export default () => (
         >
        
         <Form>
-            <label class={bodytext} htmlFor="name">Name: </label>
+            <label class={bodytext} htmlFor="name"><Trans>Name</Trans>: </label>
             <Field name="name" />
             <ErrorMessage name="name" component={TextError} /><br />
     
-            <label class={bodytext} htmlFor="email">Email: </label>
+            <label class={bodytext} htmlFor="email"><Trans>Email</Trans>: </label>
             <Field name="email" />
             <ErrorMessage name="email" component={TextError} /><br />
     
-            <label class={bodytext} htmlFor="message">Message: </label>
+            <label class={bodytext} htmlFor="message"><Trans>Message</Trans>: </label>
             <Field name="message" component="textarea"/>
             <ErrorMessage name="message" component={TextError} /><br />
     
@@ -51,3 +53,17 @@ export default () => (
         </Formik>
     </Layout>
   )
+
+  export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
