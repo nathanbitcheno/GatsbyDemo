@@ -7,7 +7,7 @@ import {
     fullPage,
     navBar,
     siteTitle,
-    footer
+    mainFooter
     } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -34,7 +34,7 @@ const Layout = ({ pageTitle, children }) => {
                     {children}
                 </main>
             </div>
-            <Footer className={footer}></Footer>
+            <Footer className={mainFooter}></Footer>
         </div>
         
     )

@@ -30,9 +30,9 @@ class CatFact extends React.Component {
       <div>
         {loading ? (
         
-          <p class={error}>LOADING...</p>
+          <p className={error}>LOADING...</p>
         ) : (
-          <p class={bodytext}>{fetchedData}</p>
+          <p className={bodytext}>{fetchedData}</p>
         )}
         
       </div>

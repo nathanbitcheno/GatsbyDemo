@@ -38,15 +38,15 @@ import {Trans} from 'gatsby-plugin-react-i18next'
        
         <Form>
           <h1 className={heading}><Trans>Contact</Trans></h1>
-            <label class={bodytext} htmlFor="name"><Trans>Name</Trans>: </label>
+            <label className={bodytext} htmlFor="name"><Trans>Name</Trans>: </label>
             <Field name="name" />
             <ErrorMessage name="name" component={TextError} /><br />
     
-            <label class={bodytext} htmlFor="email"><Trans>Email</Trans>: </label>
+            <label className={bodytext} htmlFor="email"><Trans>Email</Trans>: </label>
             <Field name="email" />
             <ErrorMessage name="email" component={TextError} /><br />
     
-            <label class={bodytext} htmlFor="message"><Trans>Message</Trans>: </label>
+            <label className={bodytext} htmlFor="message"><Trans>Message</Trans>: </label>
             <Field name="message" component="textarea"/>
             <ErrorMessage name="message" component={TextError} /><br />
     
